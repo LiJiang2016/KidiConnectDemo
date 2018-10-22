@@ -1,0 +1,2 @@
+# KidiConnectDemo
+cordova ionic
