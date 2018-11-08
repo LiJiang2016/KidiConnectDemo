@@ -1,37 +1,112 @@
-.tutorial-page {
-
-  .toolbar-background {
-    background: #fff;
-    border-color: transparent;
+page-home{
+  .tutorial-page {
+    background-color: #F2F2F2;
   }
-
+  .scroll-content {
+    padding: 0 1rem;
+  }
+  ion-content {
+    padding-bottom: 0;
+  }
+  ion-slides {
+    height: auto;
+    margin-top: 2rem;
+    //margin-top: 2.5rem;
+  }
+  .swiper-wrapper{
+    margin-bottom: 2.5rem;
+  }
   .slide-zoom {
     height: 100%;
   }
 
   .slide-title {
-    margin-top: 2.8rem;
+    //margin-top: 2rem;
+    color: #858585;
+    font-size: 2.3rem;
   }
 
   .slide-image {
     max-height: 50%;
-    max-width: 60%;
-    margin: 18px 0;
+    max-width: 80%;
+    margin: 2rem 0;
   }
-
+  .instruct-card {
+    display: table;
+    height: 11rem;
+    vertical-align: middle;
+    padding: 1rem;
+    text-align: left;
+    background-color: #ECECEC;
+    margin: auto;
+  }
+  .instruct-card .middle-inner{
+    display: table-cell;
+    vertical-align:middle;
+    *position:absolute;
+    *top:50%;
+    *left:50%;
+    width:100%;
+  }
+  .instruct-card .middle-inner p{
+    position:relative;
+    *top:-50%;
+    *left:-50%;
+    margin: 0;
+  }
+  .instruct-card span{
+    display: inline-block;
+    vertical-align: middle;
+  }
   b {
     font-weight: 500;
   }
 
-  p {
-    padding: 0 40px;
-    font-size: 14px;
-    line-height: 1.5;
-    color: #60646B;
-
-    b {
-      color: #000000;
-    }
+  p,div {
+    color: #858585;
   }
-
+  .prompt_text{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #858585;
+    margin-top: 1.2rem;
+  }
+  .button-md{
+    text-transform: none;
+  }
+  .btn{
+    height: 2.4em;
+    border-radius: 6px;
+  }
+  .btn-outline{
+    font-weight: bold;
+    border-width: 2px;
+  }
+}
+.home-footer{
+  .prompt_text{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #858585;
+  }
+  .button-md{
+    text-transform: none;
+  }
+  .btn{
+    height: 2.4em;
+    border-radius: 6px;
+  }
+  .btn-outline{
+    font-weight: bold;
+    border-width: 2px;
+  }
+  .btn-b{
+    bottom: 0;
+    right: 0;
+    //position: absolute;
+    width: 100%;
+    padding: 0 1rem;
+  }
 }

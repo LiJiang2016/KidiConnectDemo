@@ -1,30 +1,38 @@
-import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import {Component} from '@angular/core';
+import {IonicPage,NavController} from 'ionic-angular';
 
+@IonicPage()
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
 })
 export class HomePage {
-
+  slides = [];
+  home = {};
+  loginPage: any;
   constructor(public navCtrl: NavController) {
-    slides = [
+    this.slides = [
       {
-        title: "Welcome to the Docs!",
-        description: "The <b>Ionic Component Documentation</b> showcases a number of useful components that are included out of the box with Ionic.",
-        image: "assets/img/ica-slidebox-img-1.png",
+        title: "Welcome to KidiConnect",
+        description: "KidiConnect is a chat app that lets you share messages with a child's Vtech toy.",
+        image: "assets/imgs/kc1.jpg",
       },
       {
-        title: "What is Ionic?",
-        description: "<b>Ionic Framework</b> is an open source SDK that enables developers to build high quality mobile apps with web technologies like HTML, CSS, and JavaScript.",
-        image: "assets/img/ica-slidebox-img-2.png",
+        title: "Share Texts,Photos & More",
+        description: "Send text messages,voice messages,photos,drawings,and animated stickers to the special children in your life.",
+        image: "assets/imgs/kc2.jpg",
       },
       {
-        title: "What is Ionic Cloud?",
-        description: "The <b>Ionic Cloud</b> is a cloud platform for managing and scaling Ionic apps with integrated services like push notifications, native builds, user auth, and live updating.",
-        image: "assets/img/ica-slidebox-img-3.png",
+        title: "Fun for the Whole Family",
+        description: "Chat with the whole family in a group chat room.",
+        image: "assets/imgs/kc3.jpg",
       }
     ];
+    this.home = {
+      prompt_text: "You need a Learning Lodge Account to sign in.",
+      signIn_btn: "Sign In",
+      signUp_btn: "Sign Up for Learning Lodge",
+    };
+    this.loginPage = 'LoginPage';
   }
-
 }
