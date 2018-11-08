@@ -19,7 +19,7 @@ export class ForgetPwdPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.forget_data = {
       title: "Forget Password"
-    }
+    };
   }
 
   ionViewDidLoad() {
